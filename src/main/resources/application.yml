@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: root
+    password: Test@123
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/pokemon_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      hibernate:
+        format_sql: true
